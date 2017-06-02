@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SaarangApp</string>
+    <string name="register">Registration</string>
+    <string name="registration">Registration page</string>
+    <string name="email1"><u>email1</u></string>
+    <string name="email2"><u>email2</u></string>
+
+    <string-array name="Events">
+        <item>Event 1</item>
+        <item>Event 2</item>
+        <item>Event 3</item>
+        <item>Event 4</item>
+        <item>Event 5</item>
+        <item>Event 6</item>
+    </string-array>
+</resources>

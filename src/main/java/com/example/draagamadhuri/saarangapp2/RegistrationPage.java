@@ -8,7 +8,6 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegistrationPage extends AppCompatActivity {
@@ -18,7 +17,7 @@ public class RegistrationPage extends AppCompatActivity {
     private EditText et_name, et_email, et_number, et_college;
     private String name, email, number, college;
     Button regbutton;
-    TextView eventname;
+    //TextView eventname;
     int position = 0;
 
 
@@ -28,7 +27,7 @@ public class RegistrationPage extends AppCompatActivity {
         setContentView(R.layout.activity_registration_page);
 
         Intent intent = getIntent();
-        position = intent.getExtras().getInt("Position");
+        position = intent.getIntExtra("Position",0);
 
         final CustomAdapter adapter = new CustomAdapter(this);
 
@@ -40,9 +39,9 @@ public class RegistrationPage extends AppCompatActivity {
         et_number = (EditText) findViewById(R.id.number);
         et_college = (EditText) findViewById(R.id.clgname);
         regbutton = (Button) findViewById(R.id.regbutton);
-        eventname = (TextView) findViewById(R.id.textView31);
+        //eventname = (TextView) findViewById(R.id.textView31);
 
-        eventname.setText(adapter.Events[position]);
+        //eventname.setText(adapter.Events[position]);
 
         regbutton.setOnClickListener(new View.OnClickListener() {
             @Override

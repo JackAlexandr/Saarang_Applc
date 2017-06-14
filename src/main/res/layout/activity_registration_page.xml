@@ -34,35 +34,27 @@
         android:shadowDy="1"
         android:shadowRadius="2"/>
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView11"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Event name:- "
-        android:textSize="20sp"/>
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView21"
-        android:layout_marginEnd="120dp"
-        android:layout_marginRight="120dp"
-        android:text="Event 1"
-        android:textSize="20sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="170dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/evname"
+                android:hint="Event name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="20dp"/>
+    </android.support.design.widget.TextInputLayout>
+
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

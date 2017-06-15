@@ -33,42 +33,36 @@ public class EventCategories extends AppCompatActivity {
 
                 Intent i = new Intent(EventCategories.this, EventsList.class);
 
-                if (check1.isChecked()) {
-                    i.putExtra("Category 1", check1.getText().toString().trim());
-                    //startActivity(i);
-                }
+                if ((check3.isChecked())||(check2.isChecked())||(check1.isChecked()))
 
-                else {
+                {
 
-                    i.putExtra("Category 1", text.getText().toString().trim());
-                    //startActivity(i);
+                    if (check1.isChecked()) {
+                        i.putExtra("Category 1", check1.isChecked());
+                        //startActivity(i);
+                    }
 
-                }
 
-                if (check2.isChecked()) {
+                    if (check2.isChecked()) {
 
-                    i.putExtra("Category 2", check2.getText().toString().trim());
+                        i.putExtra("Category 2", check2.isChecked());
 
-                }
-                else {
+                    }
 
-                    i.putExtra("Category 2", text.getText().toString().trim());
-                    //startActivity(i);
+                    if (check3.isChecked()) {
 
-                }
+                        i.putExtra("Category 3", check3.isChecked());
 
-                if (check3.isChecked()) {
-
-                    i.putExtra("Category 3", check3.getText().toString().trim());
+                    }
 
                 }
 
-                else {
-
-                    i.putExtra("Category 3", text.getText().toString().trim());
-                    //startActivity(i);
+                else
+                {
+                    i.putExtra("None","Nothing to show");
 
                 }
+
 
                 startActivity(i);
 
